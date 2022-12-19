@@ -12,7 +12,6 @@ use once_cell::sync::Lazy;
 use claims::Claims;
 
 mod claims;
-mod jwtauth;
 mod traefik;
 
 static PUBLIC_KEY: Lazy<jwt::DecodingKey> = Lazy::new(load_key);
